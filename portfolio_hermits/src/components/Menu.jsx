@@ -14,7 +14,7 @@ const Menu = () => {
 
                     <li className='nav-item'>
                         
-                        <Link className='nav-link' to="/">Contacto</Link>
+                        <Link className='nav-link' to="/contact">Contacto</Link>
                     </li>
                 </ul>
 
