@@ -1,16 +1,33 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const Contact = () => {
+
+    const [nombre, setNombre] = useState('');
+    const [email, setEmail] = useState('');
+    const [telefono, setTelefono] = useState('');
+
+    const validar = (event) => {
+        event.preventDefault();
+        console.log('Pulsado el boton');
+        if(nombre.trim() === '' || email.trim() === '' || telefono.trim() === ''){
+            console.log('Faltan datos');
+        }
+    }
+
+
     return (
-        <div>
-            <form>
-                <input type="text" placeholder="Nombre y Apellido" />
+        <div className='container'>
+            <form className="form-group" onSubmit={validar}>
+                <input className="form-control mb-3 mt-3" type="text" placeholder="Nombre y Apellido" 
+                onChange={ (e) => {setNombre(e.target.value)}} />
             
-                <input type="email" placeholder="correo@servidor.com" />
+                <input className="form-control mb-3" type="email" placeholder="correo@servidor.com" 
+                onChange={ (e) => {setEmail(e.target.value)}} />
                     
-                <input type="text" placeholder="123456789" />
+                <input className="form-control mb-3" type="text" placeholder="123456789" 
+                onChange={ (e) => {setTelefono(e.target.value)}} />
                 
-                <input type="submit" />
+                <input className="btn btn-info btn-block mb-3" type="submit" />
 
             </form>
         </div>
