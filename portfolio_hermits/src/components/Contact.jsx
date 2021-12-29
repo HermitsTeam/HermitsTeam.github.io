@@ -25,6 +25,7 @@ const Contact = () => {
         }
         
         setSuccess('Formulario enviado correctamente');
+        setMsgerror(null);
 
 }
 
