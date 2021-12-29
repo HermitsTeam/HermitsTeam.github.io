@@ -3,9 +3,18 @@ import React from 'react'
 const Contact = () => {
     return (
         <div>
-            <h2>CONTACTOOO</h2>
+            <form>
+                <input type="text" placeholder="Nombre y Apellido" />
+            
+                <input type="email" placeholder="correo@servidor.com" />
+                    
+                <input type="text" placeholder="123456789" />
+                
+                <input type="submit" />
+
+            </form>
         </div>
     )
 }
 
-export default Contact
+export default Contact;
