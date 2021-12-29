@@ -31,7 +31,12 @@ const Contact = () => {
 
 
     return (
+        
+        <div className='form_box'>
+        <h2 className='h2_title display-2'>Contacto</h2>
         <div className='container'>
+            
+            
             <form className="form-group" onSubmit={validar}>
                 <div className="form-floating mb-3">
                     <input className="form-control mb-3 mt-3" id="floatingInput" type="text" placeholder="Nombre"
@@ -77,6 +82,7 @@ const Contact = () => {
                 }
 
             </form>
+            </div>
         </div>
     )
 }
