@@ -5,14 +5,28 @@ const Contact = () => {
     const [nombre, setNombre] = useState('');
     const [email, setEmail] = useState('');
     const [telefono, setTelefono] = useState('');
+    const [msgerror, setMsgerror] = useState(null);
+    const [success, setSuccess] = useState(null);
 
     const validar = (event) => {
         event.preventDefault();
-        console.log('Pulsado el boton');
-        if(nombre.trim() === '' || email.trim() === '' || telefono.trim() === ''){
-            console.log('Faltan datos');
+        
+        if(nombre.trim() === ''){
+            setMsgerror('El nombre es requerido');
+            return
         }
-    }
+       if (email.trim() === ''){
+            setMsgerror('El email es requerido')
+            return
+       }
+        if (telefono.trim() === ''){
+            setMsgerror('El telefono es requerido')
+            return
+        }
+        
+        setSuccess('Formulario enviado correctamente');
+
+}
 
 
     return (
@@ -30,10 +44,21 @@ const Contact = () => {
                 <input className="btn btn-info btn-block mb-3" type="submit" />
 
                 {
-                    nombre.trim() === '' ? 
+                    msgerror != null ? 
                     (
                         <div>
-                            <p className='alert alert-danger mt-4'>Nombre vacio</p>
+                            <p className='alert alert-danger mt-4'>{msgerror}</p>
+                        </div>
+                    )
+                    :
+                    ( <span> </span> )
+                }
+
+                {
+                    success != null ?
+                    (
+                        <div>
+                            <p className='alert alert-success mt-4'>{success}</p>
                         </div>
                     )
                     :
