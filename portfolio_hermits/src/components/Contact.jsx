@@ -33,14 +33,24 @@ const Contact = () => {
     return (
         <div className='container'>
             <form className="form-group" onSubmit={validar}>
-                <input className="form-control mb-3 mt-3" type="text" placeholder="Nombre y Apellido" 
-                onChange={ (e) => {setNombre(e.target.value)}} />
-            
-                <input className="form-control mb-3" type="email" placeholder="correo@servidor.com" 
-                onChange={ (e) => {setEmail(e.target.value)}} />
-                    
-                <input className="form-control mb-3" type="text" placeholder="123456789" 
-                onChange={ (e) => {setTelefono(e.target.value)}} />
+                <div className="form-floating mb-3">
+                    <input className="form-control mb-3 mt-3" id="floatingInput" type="text" placeholder="Nombre"
+                    onChange={ (e) => {setNombre(e.target.value)}} />
+                    <label for="floatingInput">Nombre y Apellido</label>
+                </div>
+                
+                <div className="form-floating mb-3">
+                    <input className="form-control mb-3" id="floatingInput" type="email" placeholder="correo@servidor.com" 
+                    onChange={ (e) => {setEmail(e.target.value)}} />
+                    <label for="floatingInput">Email</label>
+                </div>
+                
+
+                <div className="form-floating mb-3"> 
+                    <input className="form-control mb-3" id="floatingInput" type="text" placeholder="123456789" 
+                    onChange={ (e) => {setTelefono(e.target.value)}} />
+                    <label for="floatingInput">Telefono</label>
+                </div>
                 
                 <input className="btn btn-info btn-block mb-3" type="submit" />
 
