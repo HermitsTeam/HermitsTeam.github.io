@@ -29,6 +29,17 @@ const Contact = () => {
                 
                 <input className="btn btn-info btn-block mb-3" type="submit" />
 
+                {
+                    nombre.trim() === '' ? 
+                    (
+                        <div>
+                            <p className='alert alert-danger mt-4'>Nombre vacio</p>
+                        </div>
+                    )
+                    :
+                    ( <span> </span> )
+                }
+
             </form>
         </div>
     )
