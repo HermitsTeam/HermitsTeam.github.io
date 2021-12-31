@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '../App.css';
 
 const Contact = () => {
   const [nombre, setNombre] = useState("");
@@ -29,7 +30,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="container">
+    <div className='contact_container' >
+      <div className="container">
       <h2 className="h2_title display-2">Contacto</h2>
 
       <div className="row">
@@ -98,6 +100,7 @@ const Contact = () => {
 
         <div className="col"></div>
       </div>
+    </div>
     </div>
   );
 };
