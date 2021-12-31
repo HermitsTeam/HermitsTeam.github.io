@@ -6,7 +6,7 @@ const Footer = () => {
     <div>
       <footer>
         <div className="text-center p-4 bg-dark">
-          © 2021 Copyright:
+         <p className="footer_text">© 2021 Copyright:<p>
           <Link className="text-reset fw-bold" to="/">
             <p className="nav-link">RmiX Works</p>
           </Link>
