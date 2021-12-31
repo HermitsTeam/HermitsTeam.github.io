@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div>
       <footer>
-        <div className="text-center bg-dark">
+        <div className="text-center p-4 bg-dark">
          <p className="footer_text">© 2021 Copyright:</p>
           <Link className="text-reset fw-bold" to="/">
             <p className="nav-link">RmiX Works</p>
