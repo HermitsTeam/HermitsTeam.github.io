@@ -1,0 +1,19 @@
+import React, { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+
+const Footer = () => {
+  return (
+    <div>
+      <footer>
+        <div className="text-center p-4 bg-dark">
+          © 2021 Copyright:
+          <Link className="text-reset fw-bold" to="/">
+            <p className="nav-link">RmiX Works</p>
+          </Link>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default Footer;

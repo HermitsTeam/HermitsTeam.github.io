@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 
 import Menu from './components/Menu'
+import Footer from './components/Footer'
 import Home from './components/Home'
 import Contact from './components/Contact'
 
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </Router>
       
     </div>
