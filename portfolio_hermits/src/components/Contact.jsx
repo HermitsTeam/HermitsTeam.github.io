@@ -32,12 +32,15 @@ const Contact = () => {
 
     return (
         
-        <div className='form_box'>
-        <h2 className='h2_title display-2'>Contacto</h2>
         <div className='container'>
+            <h2 className='h2_title display-2'>Contacto</h2>
             
             
-            <form className="form-group" onSubmit={validar}>
+                <div className="row">
+                    <div className="col"></div>
+
+                    <div className="col">
+                    <form className="form-group" onSubmit={validar}>
                 <div className="form-floating mb-3">
                     <input className="form-control mb-3 mt-3" id="floatingInput" type="text" placeholder="Nombre"
                     onChange={ (e) => {setNombre(e.target.value)}} />
@@ -82,7 +85,17 @@ const Contact = () => {
                 }
 
             </form>
-            </div>
+
+
+
+                    </div>
+
+                    <div className="col"></div>
+
+
+                </div>
+            
+            
         </div>
     )
 }
