@@ -26,7 +26,7 @@ const Footer = () => {
 
             <a
               class="btn btn-outline-light btn-floating m-1"
-              href="#!"
+              href="https://google.com"
               role="button"
             >
               <i class="fab fa-google"></i>
@@ -50,7 +50,7 @@ const Footer = () => {
 
             <a
               class="btn btn-outline-light btn-floating m-1"
-              href="#!"
+              href="https://github.com/RmiXWorks"
               role="button"
             >
               <i class="fab fa-github"></i>

@@ -4,8 +4,9 @@ import '../App.css'
 
 
 const Home = () => {
+    //className='hero_container'
     return (
-        <div className='hero_container'>
+        <div >
             <HeroSection/>
         </div>
     )
